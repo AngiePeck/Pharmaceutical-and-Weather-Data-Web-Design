@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Review</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="weather_website.css">
+  <title>Bootstrap Components</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href='#'>
+            <img src='Logo.jpg' width="50" height="40" class="d-inline-block align-middle">
+            Iron Analytics
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Comparison.html">Comparison</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="weather_df.html">Data</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Plots
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="Viz1.html">Temperature</a>
+                <a class="dropdown-item" href="Viz2.html">Humidity</a>
+                <a class="dropdown-item" href="Viz3.html">Cloudiness</a>
+                <a class="dropdown-item" href="Viz4.html">Wind Speed</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+
+    <div class="container">
+        <h1>Weather vs. Latitude</h1>
+
+        <div class="row">
+          <div class="col-md-12">
+            <h3>The Premise of the OpenWeatherMap API Challenge.</h3>
+            <p>To answer a fundamental question:</p>
+            <p>"Is there a trend in weather characteristics as we approach the equator?"</p>
+            <p>Temperature, humidity, cloudiness, and windspeed data for a random list of 500 cities from the 
+                OpenWeatherMap API was plotted against their latitudes.
+                Each type of data was plotted against the cities latitude. This website provides each visualization, explanations of the data, a comparison page, and the actual source data obtained from the API.</p>
+          </div>
+
+        <div class="row"> 
+          <div class="col-md-12">
+            <h4>Visualizations:</h4>
+          </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3">
+                <a href="Viz1.html"><img src="temp_lat.png" alt="TempVsLat" class="img-thumbnail"></a>
+            </div>
+            <div class="col-md-3">
+                <a href="Viz2.html"><img src="humid_lat.png" alt="humidVsLat" class="img-thumbnail"></a>
+            </div>
+            <div class="col-md-3">
+                <a href="Viz3.html"><img src="cloud_lat.png" alt="CloudVsLat" class="img-thumbnail"></a>
+            </div>
+            <div class="col-md-3">
+                <a href="Viz4.html"><img src="wind_lat.png" alt="windVsLat" class="img-thumbnail"></a>
+            </div>
+        </div>
+        
+      </div>
+  </div>
+
+
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
